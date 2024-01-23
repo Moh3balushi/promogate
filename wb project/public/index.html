@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROMOGATE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+      body {
+        background-color: #24262b;
+      }
+      .photo-gallery {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .photo-gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .photo-gallery img.active {
+    opacity: 1;
+  }
+  
+  </style>
+</head>
+
+
+<body>
+  <header>
+        <div class="navbar navbar-expand-md navbar-dark text-white fixed-top" style="background-color: #69747fe8;">
+        <div class="container">
+            <img src="imgs/A2.png" class="logoimg"  style="padding-right: 30px;width: 110px;height: auto;">
+            <a href="index.html" class="navbar-brand"
+                style="font-size: 28pt;font-weight: bold;font-family: 'Times New Roman', Times, serif;"> PROMOGATE
+            </a>
+            <button class="navbar-toggler" type="button" data - bs - toggle="collapse" data - bs - target="#mainmenu">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link "> Home </a> </li>
+                  <li class="nav-item">
+                      <a href="contactUs.html" class="nav-link active"> Contact Us </a> </li>
+                  
+              </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+
+      <br>
+
+    <style>
+      #i{background-image: url(IMG_1493.jpg);background-size: 100%; text-align: left; font-weight: 700; background-repeat: no-repeat;
+        font-size: 350%;width: 700;height: 700px; }
+
+ </style>
+    <div id="i">
+        <h9>  
+        </h9>
+        <h4 style="color: black; ">Where you find your needs....</h4>
+        
+    </div>
+
+  <main>
+    <div >
+      <section>
+        <h4 class="blog-heading "> خدماتنا</h4> <br>
+
+        <div class="row">
+
+          
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" >
+                <img src="imgs/IMG_1498.jpg" class="bloogphoto"/>
+              </div>
+              <div class="card-body">
+                <h5 class="car-title">كميم عمانية</h5>
+                <p class="card-text">
+                 ارخص الاسعار
+                </p>
+                <a href="كميم.html" class="btn btn-primary">بحث</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" >
+                <img src="imgs/IMG_1506.JPG" class="bloogphoto"/>
+              </div>
+              <div class="card-body">
+                <h5 class="car-title">الصناعات الخشبية اليدوية</h5>
+                <p class="card-text">
+                الافضل دائماً
+                </p>
+                <a href="اعمال خشبية.html" class="btn btn-primary">بحث</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" >
+                <img src="imgs/IMG_1507.WEBP" class="bloogphoto"  />
+              </div>
+              <div class="card-body">
+                <h5 class="car-title">المصورين</h5>
+                <p class="card-text">
+                 للمبدعين فقط
+                </p>
+                <a href="مصورين.html" class="btn btn-primary">بحث</a>
+              </div>
+            </div>
+          </div>
+        </section>
+          </div>
+          
+  </main>
+  
+  <div class="photo-gallery">
+    <img src="imgs/IMG_1569.PNG" alt="Photo 1">
+    <img src="imgs/IMG_1566.PNG" alt="Photo 2">
+    <img src="imgs/IMG_1567.PNG" alt="Photo 3">
+    <img src="imgs/IMG_1568.PNG" alt="Photo 3">
+
+
+    
+  </div>
+
+
+<script>
+const interval = 3000;
+
+const photoGallery = document.querySelector('.photo-gallery');
+
+const images = photoGallery.querySelectorAll('img');
+let currentIndex = 0;
+
+
+images[currentIndex].classList.add('active');
+function changeImage() {
+images[currentIndex].classList.remove('active');
+currentIndex++;
+
+if (currentIndex >= images.length) {
+currentIndex = 0;
+}
+
+images[currentIndex].classList.add('active');
+}
+
+setInterval(changeImage, interval);
+</script>
+
+
+</body>
+    <br><br>
+  
+
+<br><br><br><br>
+
+  
+
+<body class="footer">
+
+  <footer class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col">
+                   <h4>company</h4>
+                   <ul>
+                       <li><a href="aboutUS.html">about us</a></li>
+                   </ul>
+               </div>
+               <div class="footer-col">
+                   <h4>get help</h4>
+                   <ul>
+                       <li><a href="contactUS.html">Contact Us</a></li>
+          </div>
+
+               <div class="footer-col">
+                   <h4>follow us</h4>
+                   <div class="social-links">
+                       <a href="https://api.whatsapp.com/send/?phone=96877530022&text&type=phone_number&app_absent=0
+                       "><i class="feb bi-whatsapp"></i></a>
+                       <a href="https://www.instagram.com/promogate.om?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr
+                       "><i class="fab fa-instagram"></i></a>
+                      
+                   </div>
+               </div>
+           </div>
+       </div>
+  </footer>
+
+  
+
+</body>
+
+
+</html>
